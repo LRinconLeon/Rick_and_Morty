@@ -7,6 +7,7 @@ import About from './views/About.jsx';
 import Deatil from './views/Deatil.jsx';
 import Form from './components/Forms/Forms.jsx';
 import Favorites from './components/Favorites/Favorites.jsx';
+import { removeFavorite } from './components/Redux/actions.js';
 //import ErrorPage from './views/error/errorPage.jsx';
 
 function App() {
@@ -39,7 +40,8 @@ function App() {
 
    function onClose (id) {
       let deleted = characters.filter((character)=>character.id !==(id))
-      setCharacters(deleted)
+      setCharacters(deleted);
+      removeFavorite(id);
    }
 
    function login (userData){

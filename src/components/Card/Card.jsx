@@ -39,13 +39,13 @@ function Card({ id, name, status, species, gender, origin, image, onClose, addFa
    }, [myFavorites]);
 
    return ( 
-      <div className={style.descripcion}> 
+      <div className={style.description}> 
 
       {isFav ? (
         <button onClick={handleFavorite}>❤️</button>
       ) : (
         <button onClick={handleFavorite}>🤍</button>
-      )};
+      )}
 
       <button onClick={() => { onClose(id) }} className={style.btn}>X</button>
          

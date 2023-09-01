@@ -1,0 +1,46 @@
+.emailImput{
+    width: 220px;
+    border-radius: 15px;
+    height: 25px;
+    padding: 0px 20px;
+    margin-top: 10px;
+    font-size: 15px;
+    color: black;
+    outline: none;
+    border: 2px solid rgb(208, 248, 150);
+}
+
+.passwordImput{
+    width: 220px;
+    border-radius: 15px;
+    height: 25px;
+    padding: 0px 20px;
+    margin-top: 10px;
+    margin-left: 7px;
+    font-size: 15px;
+    color: black;
+    outline: none;
+    border: 2px solid rgb(208, 248, 150);
+}
+
+.form{
+   /* -webkit-backdrop-filter: blur(10px); */
+    backdrop-filter: blur(10px);
+    width: 100%;
+    padding: 10px;
+}
+
+.btnSubmit{
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 7px;
+    background: rgba(32, 211, 251, 0.916);
+    width: 100px;
+    height: 30px;
+    line-height: 10px;
+    color: white;
+    font-size: 15px;
+    border-radius: 15px;
+    border-color: greenyellow;
+    cursor: pointer;
+}
