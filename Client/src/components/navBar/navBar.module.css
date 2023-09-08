@@ -1,0 +1,44 @@
+.buttons{
+    
+}
+
+.aboutBtn{
+    background: rgba(32, 211, 251, 0.916);
+    border-color: greenyellow;
+    border-radius: 30px;
+    color: white;
+    font-size: 15px;
+    width: 80px;
+    height: 38px;
+}
+
+.homeBtn {
+    background: rgba(32, 211, 251, 0.916);
+    border-color: greenyellow;
+    border-radius: 30px;
+    color: white;
+    font-size: 15px;
+    width: 80px;
+    height: 38px;
+    
+}
+
+.favoritesBtn {
+    background: rgba(32, 211, 251, 0.916);
+    border-color: greenyellow;
+    border-radius: 30px;
+    color: white;
+    font-size: 15px;
+    width: 80px;
+    height: 38px;
+}
+
+.logOutBtn {
+    background: rgba(32, 211, 251, 0.916);
+    border-color: greenyellow;
+    border-radius: 30px;
+    color: white;
+    font-size: 15px;
+    width: 80px;
+    height: 38px;
+}
