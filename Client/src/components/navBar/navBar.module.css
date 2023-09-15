@@ -1,5 +1,5 @@
 .buttons{
-    
+    margin-top: 5px;
 }
 
 .aboutBtn{
@@ -10,6 +10,11 @@
     font-size: 15px;
     width: 80px;
     height: 38px;
+}
+
+.aboutBtn:hover {
+    border: 3px solid #55ff00;
+    box-shadow: 0px 0px 5px 5px #00f7ff;
 }
 
 .homeBtn {
@@ -23,6 +28,11 @@
     
 }
 
+.homeBtn:hover {
+    border: 3px solid #55ff00;
+    box-shadow: 0px 0px 5px 5px #00f7ff;
+}
+
 .favoritesBtn {
     background: rgba(32, 211, 251, 0.916);
     border-color: greenyellow;
@@ -33,6 +43,11 @@
     height: 38px;
 }
 
+.favoritesBtn:hover {
+    border: 3px solid #55ff00;
+    box-shadow: 0px 0px 5px 5px #00f7ff;
+}
+
 .logOutBtn {
     background: rgba(32, 211, 251, 0.916);
     border-color: greenyellow;
@@ -41,4 +56,9 @@
     font-size: 15px;
     width: 80px;
     height: 38px;
+}
+
+.logOutBtn:hover {
+    border: 3px solid #55ff00;
+    box-shadow: 0px 0px 5px 5px #00f7ff;
 }

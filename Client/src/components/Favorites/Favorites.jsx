@@ -1,4 +1,5 @@
 import Card from "../Card/Card";
+import style from "./Favorites.module.css"
 import { useDispatch, useSelector } from "react-redux"
 import { removeFavorite } from "../Redux/actions";
 import { filterCards, orderCards } from "../Redux/actions";
@@ -26,22 +27,23 @@ const Favorites = () => {
 
     return (
         <>
-        <select onChange={handleOrder}>
+        <select onChange={handleOrder} className={style.orderCards}>
             <option value="A">Ascendente</option>
             <option value="D">Descenente</option>
         </select>
 
-        <select onChange={handleFilter}>
+        <select onChange={handleFilter} className={style.filterCards}>
             <option value="Male">Male</option>
             <option value="Female">Female</option>
             <option value="Genderless">Genderless</option>
             <option value="unknown">unknown</option>
             <option value="allCharacters">All Characters</option>
         </select>
-
+        
+        <div className={style.tarjeta}>
         {favorites?.map(({ id, name, status, gender, image }) => {
             return (
-                <Card
+                <Card 
                 key={id}
                 id={id}
                 name={name}
@@ -52,6 +54,7 @@ const Favorites = () => {
                 />
             );
             })}
+        </div>
         </>
     );
 };

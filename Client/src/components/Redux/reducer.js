@@ -1,5 +1,6 @@
 import { ADD_FAVORITE, REMOVE_FAVORITE, FILTER_CARDS, ORDER_CARDS } from "./actions-types"
 
+
 const initialState = {
     myFavorites: [],
     allCharacters: [],
@@ -10,17 +11,16 @@ const rootReducer = (state = initialState, action) => {
         case ADD_FAVORITE:
             return {
                 ...state,
-                myFavorites: [...state.allCharacters, action.payload],
-                allCharacters: [...state.allCharacters, action.payload],
-            };
+                myFavorites: action.payload,
+                allCharacters: action.payload
+            }
 
         case REMOVE_FAVORITE:
             return {
                 ...state,
-                myFavorites: state.myFavorites.filter(
-                    (char) => char.id !== action.payload   // *?*
-                ),
-            };
+                myFavorites: action.payload,
+                allCharacters: action.payload 
+            } 
         
         case FILTER_CARDS:
             const allCharactersFiltered = state.allCharacters.filter(character => //Recuerda que filter crea un array nuevo, por lo tanto no modificara el original

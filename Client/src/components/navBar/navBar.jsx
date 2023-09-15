@@ -6,10 +6,11 @@ import { Link } from "react-router-dom";
 function NavBar ({ onSearch }) {
     return(
         <>
+        
          <div>
             <SearchBar onSearch={onSearch}/>
         </div>
-        <hr />
+        
         <div className={style.buttons}>
             <Link to="/about">
               <button className={style.aboutBtn}>About</button>
@@ -28,7 +29,6 @@ function NavBar ({ onSearch }) {
             </Link>
 
         </div>
-        <hr />
 
         </>
     );

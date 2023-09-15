@@ -36,7 +36,7 @@ export default function SearchBar(props) {
          /> 
 
          <button className={style.btn} onClick={handleButtonClick}>Search</button>
-         {/* <button className={style.btn} onClick={() => onSearch(id)}>Agregar</button> */}
+         
       </div>
    );
 }
