@@ -26,32 +26,32 @@ function App() {
 
 // NO FUNCIONA CON LA NUEVA ACTUALIZACION:
 
-   // const login = async (userData) => {  
-   //    try {
-   //       const { email, password } = userData;
-   //       const { data } = await axios(URL + `?email=${email}&password=${password}`);
-   //       const { access } = data;
+   const login = async (userData) => {  
+      try {
+         const { email, password } = userData;
+         const { data } = await axios(URL + `?email=${email}&password=${password}`);
+         const { access } = data;
 
-   //       setAccess(access);
-   //       access && navigate('/home');
+         setAccess(access);
+         access && navigate('/home');
    
-   //    } catch (error) {
-   //       console.log(error.message);
-   //    }
-   // }
+      } catch (error) {
+         console.log(error.message);
+      }
+   }
 
-// SOLO FUNCIONA CON ESTA: 
+//  SOLO FUNCIONA CON ESTA: 
 
-   const emailAddress = "lmrl@gmail.com";
-   const password = "larizza19";
+//    const emailAddress = "lmrl@gmail.com";
+//    const password = "larizza19";
    
-   const login = (userData) => {
-      if(userData.emailAddress === emailAddress && userData.password === password){
-         setAccess(true);
-         navigate("/home");
-      } else {
-         alert("Usuario incorrecto");
-      }  }
+//    const login = (userData) => {
+//       if(userData.emailAddress === emailAddress && userData.password === password){
+//          setAccess(true);
+//          navigate("/home");
+//       } else {
+//          alert("Usuario incorrecto");
+//       }  }
 
    const onSearch = async (id) => {  
       try {
